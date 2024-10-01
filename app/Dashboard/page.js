@@ -30,7 +30,7 @@ export default function Dashboard(){
             <div className="w-full h-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 justify-center items-center gap-2">
                 <Cart logo={ order } number={ 75 } description={ "Total Orders"} percent={4} increase={true} />
                 <Cart logo={ delevered } number={ 357 } description={ "Total Delivered" } percent={ 4 } increase={ true } />
-                <Cart logo={ cancled } number={ 65 } description={ "Total Canceled" } percent={ 425 } increase={ false } />
+                <Cart logo={ cancled } number={ 65 } description={ "Total Canceled" } percent={ 25 } increase={ false } />
                 <Cart logo={ revenue } number={ "$128" } description={ "Total Revenue" } percent={ 12 } increase={ false } />
             </div>
         </div>
