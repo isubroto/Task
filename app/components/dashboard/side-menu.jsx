@@ -1,3 +1,6 @@
+"use client"
+import { useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 import Image from 'next/image'
 import dashbordicon from '../../res/dashbord.svg'
 import orderList from '../../res/order.svg'
@@ -7,6 +10,13 @@ import calendars from '../../res/calender.svg'
 import chart from '../../res/chat.svg'
 import wallet from '../../res/wallet.svg'
 const Sidebar = () => {
+  const router = useRouter();
+
+  useEffect(() => {
+    if (!localStorage.getItem("experimentalUser")){
+      router.push('/SignUp');
+    }
+  }, [ router ]);
   return (
     <div className="w-1/5 h-full flex flex-col gap-8 justify-center items-center">
       <div className="font-bold text-5xl text-[#333333] px-[3.25rem] py-10">
