@@ -20,11 +20,11 @@ const SignUp = () => {
               <h1 className="text-[2.125rem] font-bold text-[#21211D]">Join the green movement</h1>
               <p className="text-[#A7AA9D] text-xl">Sign up for free</p>
         </div>
-          <button className="border border-[#DBDECF] rounded-xl flex justify-center items-center gap-3 py-4 px-6 w-full font-semibold text-[#21211D]" onclick={()=>doSocialLogin("")}><Image src={ googlesymbol } alt="google symbol" width={ 24 } height={ 24 } /> Continue with Google</button>
-          <div class="flex items-center w-full text-center">
-              <hr class="flex-grow border-t-2 border-[#DBDECF]" />
-              <span class="px-4 text-[#A7AA9D]">or</span>
-              <hr class="flex-grow border-t-2 border-[#DBDECF]" />
+          <button className="border border-[#DBDECF] rounded-xl flex justify-center items-center gap-3 py-4 px-6 w-full font-semibold text-[#21211D]" onClick={()=>doSocialLogin("google")}><Image src={ googlesymbol } alt="google symbol" width={ 24 } height={ 24 } /> Continue with Google</button>
+          <div className="flex items-center w-full text-center">
+              <hr className="flex-grow border-t-2 border-[#DBDECF]" />
+              <span className="px-4 text-[#A7AA9D]">or</span>
+              <hr className="flex-grow border-t-2 border-[#DBDECF]" />
           </div>
           <div className="w-full flex flex-col gap-[.625rem]">
               <label htmlFor="email" className="font-semibold">Email</label>
