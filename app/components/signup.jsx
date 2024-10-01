@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image'
 import googlesymbol from '../res/google_symbol.svg'
-import {doSocialLogin} from '../../actions/auth'
+import {doSocialLogin} from '../actions/auth'
 
 
 const SignUp = () => {
