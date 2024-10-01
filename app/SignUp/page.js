@@ -1,13 +1,18 @@
-import React from 'react'
 import SignUp from '../components/signup'
 import Image from 'next/image'
 import loginImage from '../res/DrawKit Vector Illustration Ecology & Environment (3) 1.png'
+import { auth } from '../actions/auth';
+import { redirect } from "next/navigation";
 export const metadata = {
   title: "Sing Up",
   description: "App Task",
 
 };
-export default function page () {
+export default async function page () {
+  const session = await auth();
+  if (session?.user) {
+    redirect("/Dashboard")
+  }
   return (
       <div className="w-full md:w-[76.18056%] h-screen overflow-hidden grid grid-cols-1 md:grid-cols-2 items-center justify-center mx-auto shadow-lg ">
         <SignUp />

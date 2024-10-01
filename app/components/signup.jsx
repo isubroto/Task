@@ -1,19 +1,10 @@
 "use client"
-import { useEffect } from 'react';
-import { useRouter } from 'next/navigation';
 import Image from 'next/image'
-import googlesymbol from '../res/google_symbol.svg'
-import {doSocialLogin} from '../actions/auth'
+import googlesymbol from '@/app/res/google_symbol.svg'
+import { doSocialLogin } from '@/app/actions/index'
 
 
 const SignUp = () => {
-  const router = useRouter();
-
-  useEffect(() => {
-    if (localStorage.getItem("experimentalUser")) {
-      router.push('/Dashboard');
-    }
-  }, [ router ]);
   return (
     <div className="w-10/12 h-full flex flex-col gap-8 justify-center items-center">
         <div className="flex flex-col gap-2 justify-center w-full">
