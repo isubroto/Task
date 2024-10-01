@@ -2,6 +2,11 @@ import React from 'react'
 import SignUp from '../components/signup'
 import Image from 'next/image'
 import loginImage from '../res/DrawKit Vector Illustration Ecology & Environment (3) 1.png'
+export const metadata = {
+  title: "Sing Up",
+  description: "App Task",
+
+};
 export default function page () {
   return (
       <div className="w-full md:w-[76.18056%] h-screen overflow-hidden grid grid-cols-1 md:grid-cols-2 items-center justify-center mx-auto shadow-lg ">
